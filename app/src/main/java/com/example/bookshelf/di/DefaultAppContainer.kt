@@ -8,7 +8,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 
 class DefaultAppContainer : AppContainer {
-
+//    private val json = Json {
+//        ignoreUnknownKeys = true
+//        explicitNulls = false
+//    }
     override val bookshelfApiService: BookshelfApiService by lazy {
         Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())

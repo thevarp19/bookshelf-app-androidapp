@@ -30,10 +30,7 @@ class QueryViewModel(
     val uiStateSearch = _uiStateSearch.asStateFlow()
 
 
-    // Notes: Question: I would like this to go to a separate viewModel since it belangs to a
-    //  different screen. but at moment I am not sure how to get it donem because to
-    //  select a favority book I would need to pass both view models
-    // Logic for Favorite books -- Beg
+
     var favoriteBooks: MutableList<Book> by mutableStateOf(mutableListOf<Book>())
         private set
 
